@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas Implementasi Interface</title>
+</head>
+<body>
+	<!-- Sari Krisdianto -->
+		<!-- 3411191111 -->
+		<!-- DSE-C -->
+		
+<form name="myForm" action="" onsubmit="return validateForm()"
+method="POST">
+<input type="text" name="username" id="username" placeholder="Username" >Username 3-15 karakter<br> 
+<input type="password" name="password" id="pass" placeholder="Password">Password min 4 digit harus ada Huruf besar Symbol dan Angka<br>
+<input type="password" name="repeat" id="repeat" placeholder="Ulangi Password">Ulangi Password harus sama dengan Password<br>
+<input type="text" name="email" id="email" placeholder="Email">email format email<br>
+<input type=”text” name=”telp” id=”telp” placeholder=”NomorTelepon”>Nomor Telepon harus 10 - 12 digit<br>
+<textarea id="alamat" style="width: 167px;">Alamat</textarea>Alamat tidak boleh kosong<br>
+
+
+<script type="text/javascript">
+	function validateForm(){
+		var username = document.myForm.username.value;
+		var password = document.myForm.password.value;
+		var repeat = document.myForm.repeat.value;
+		var email = document.myForm.email.value;
+		var telp = document.myForm.telp.value;
+		var alamat = document.myForm.alamat.value;
+		
+		if(username.length != 15){
+			alert("Username Harus 3-15 Karakter");
+			return false;
+		}
+		if(isNaN(telp)){
+			alert("Telp harus berupa angka");
+			return false;
+		}else{
+			return true;
+		}
+		if(inputText.value.match(mailformat))
+		{
+		document.form1.text1.focus();
+		}
+	}
+</script>
+</body>
+</html>
