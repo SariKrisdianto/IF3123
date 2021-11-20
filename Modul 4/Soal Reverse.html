@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Soal Reverse</title>
+</head>
+<body>
+		<!-- Sari Krisdianto -->
+		<!-- 3411191111 -->
+		<!-- DSE-C -->
+String <input type="text" id="teks"><br/>
+<input type="button" onclick="reverse()" value="Balikkan Kata"><br/>
+Hasil <input type="text" id="hasil">
+
+<script type="text/javascript">
+     function reverse(){
+           x=document.getElementById('teks').value; 
+           var hsl,p;
+           hsl=""; 
+           p=x.length; 
+           for(a=p-1;a>=0;a--){ 
+                hsl=hsl+x.charAt(a); 
+           }
+           document.getElementById('hasil').value=hsl; 
+     }
+</script>
+</body>
+</html>
